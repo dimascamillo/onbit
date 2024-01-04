@@ -1,0 +1,6 @@
+#container-header {
+  max-width: 120rem;
+  margin: auto;
+  padding-top: 2.5rem;
+  display: flex;
+  justify-content: space-between; }

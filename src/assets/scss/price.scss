@@ -1,0 +1,38 @@
+#price {
+  height: 50rem;
+  background-image: url("../img/background-price.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 13rem;
+}
+
+#container-price {
+  height: 20rem;
+  width: 80%;
+  margin: auto;
+  padding: 0 20rem;
+
+  text-align: center;
+
+  background-image: url("../img/price.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .price-card {
+    h2 {
+      font-size: 1rem;
+      color: $white;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      color: $white;
+      font-weight: bold;
+    }
+  }
+}

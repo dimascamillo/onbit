@@ -1,0 +1,15 @@
+{
+  "name": "onbit",
+  "version": "1.0.0",
+  "description": "onbite website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch src/assets/scss/global.scss -o src/assets/css compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
