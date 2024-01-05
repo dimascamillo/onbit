@@ -1,0 +1,36 @@
+#faq {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 10rem;
+  text-align: center; }
+  #faq h2 {
+    font-size: 3rem;
+    margin: 2rem; }
+  #faq .description {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 4rem; }
+  #faq details {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    text-align: left; }
+    #faq details::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/questionIcon.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 5rem;
+      height: 5rem;
+      left: 0;
+      top: -10px; }
+    #faq details summary {
+      margin-left: 7rem;
+      list-style: none;
+      cursor: pointer;
+      font-size: 2rem; }
+    #faq details p {
+      height: 7rem; }

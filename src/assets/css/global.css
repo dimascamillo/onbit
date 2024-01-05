@@ -48,9 +48,10 @@ a {
   display: flex;
   justify-content: space-between; }
   #container-header h1 {
-    color: #1589e7c0;
-    font-weight: 700;
-    font-size: 2.5rem; }
+    width: 20rem; }
+    #container-header h1 img {
+      width: 100%;
+      object-fit: cover; }
   #container-header nav ul {
     display: flex;
     align-items: center;
@@ -325,3 +326,61 @@ a {
 #card-ourMission-two.disabled,
 #card-ourMission-three.disabled {
   display: none; }
+
+#faq {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 10rem;
+  text-align: center; }
+  #faq h2 {
+    font-size: 3rem;
+    margin: 2rem; }
+  #faq .description {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 4rem; }
+  #faq details {
+    position: relative;
+    width: 100%;
+    height: 12rem;
+    border: 1px solid #0a3641e3;
+    text-align: left;
+    transition: height 0.2s; }
+    #faq details[open] {
+      height: 27rem; }
+      #faq details[open] summary::before {
+        background-image: url("../img/arrow-right.svg"); }
+    #faq details::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/questionIcon.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 5rem;
+      height: 5rem;
+      left: 30px;
+      top: 35px; }
+    #faq details summary {
+      position: relative;
+      margin-left: 10rem;
+      margin-top: 4rem;
+      list-style: none;
+      cursor: pointer;
+      font-size: 2rem; }
+      #faq details summary::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/arrow-down.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 3rem;
+        height: 3rem;
+        right: 30px;
+        bottom: 0; }
+    #faq details p {
+      margin-top: 8rem;
+      padding: 1.5rem;
+      height: 12rem;
+      background-color: #0a3641e3; }

@@ -14,10 +14,11 @@
   justify-content: space-between;
 
   h1 {
-    color: $logoColor;
-
-    font-weight: 700;
-    font-size: 2.5rem;
+    width: 20rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   nav ul {
