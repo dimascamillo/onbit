@@ -37,8 +37,21 @@
   display: flex;
 
   nav {
+    position: relative;
     display: flex;
     flex-direction: column;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/separate-ourMission-left.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+    }
 
     button {
       text-align: left;

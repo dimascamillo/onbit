@@ -29,8 +29,19 @@
 #container-ourMission {
   display: flex; }
   #container-ourMission nav {
+    position: relative;
     display: flex;
     flex-direction: column; }
+    #container-ourMission nav::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/separate-ourMission-left.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%; }
     #container-ourMission nav button {
       text-align: left;
       font-size: 1.5rem;
