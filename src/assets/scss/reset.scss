@@ -30,4 +30,15 @@ button {
 button {
   border: 0;
   cursor: pointer;
+  background-color: transparent;
+  color: $white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
 }

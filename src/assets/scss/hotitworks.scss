@@ -1,0 +1,76 @@
+#howItWorks {
+  width: 80%;
+  margin: auto;
+
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    & button {
+      font-size: 2rem;
+      background-color: transparent;
+      color: $white;
+      padding: 1rem 2rem;
+
+      transition: 0.2s all ease;
+
+      &.active {
+        background-color: $background-button;
+      }
+    }
+  }
+}
+
+.card-howItWorks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  text-align: center;
+
+  margin-top: 8rem;
+  padding-bottom: 10rem;
+
+  .card-howItWorks-container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 20%;
+
+    &:nth-child(2) {
+      &::after {
+        position: absolute;
+        content: "";
+        background-image: url("../img/bars-howItWorks.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: -30px;
+        left: -100px;
+        width: 5px;
+        height: 300px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/bars-howItWorks.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: -30px;
+        right: -100px;
+        width: 5px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+#card-howItWorks-one.disabled,
+#card-howItWorks-two.disabled {
+  display: none;
+}

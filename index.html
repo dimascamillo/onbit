@@ -15,7 +15,7 @@
     <title>onBit WebSite</title>
   </head>
   <body>
-    <header>
+    <header id="header-navbar">
       <div id="container-header">
         <h1>onBit</h1>
         <nav>
@@ -55,6 +55,77 @@
           </div>
         </div>
       </section>
+
+      <section id="howItWorks">
+        <header>
+          <nav>
+            <ul>
+              <li>
+                <button
+                  id="btn-howItWorks-one"
+                  class="btn-navigation-howItWorks active"
+                  onclick="handleActiveSession()">
+                  RDNT Lockers
+                </button>
+              </li>
+              <li>
+                <button
+                  id="btn-howItWorks-two"
+                  class="btn-navigation-howItWorks disabled"
+                  onclick="handleActiveSession()">
+                  Lenders & Borrowers
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <div id="card-howItWorks-one" class="active">
+          <div class="card-howItWorks">
+            <div class="card-howItWorks-container">
+              <figure><img src="src/assets/img/lockin.svg" alt="" /></figure>
+              <h2>Lock $RDNT liquidity</h2>
+              <p>Contrary popular belief, Lorem Ipsum is not simply random It has roots in a piece</p>
+            </div>
+
+            <div class="card-howItWorks-container">
+              <figure><img src="src/assets/img/liquidity.svg" /></figure>
+              <h2>Lock $RDNT liquidity</h2>
+              <p>Contrary popular belief, Lorem Ipsum is not simply random It has roots in a piece</p>
+            </div>
+
+            <div class="card-howItWorks-container">
+              <figure><img src="src/assets/img/stacks.svg" /></figure>
+              <h2>Lock $RDNT liquidity</h2>
+              <p>Contrary popular belief, Lorem Ipsum is not simply random It has roots in a piece</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="card-howItWorks-two" class="disabled">
+          <div class="card-howItWorks">
+            <div class="card-howItWorks-container">
+              <figure><img src="src/assets/img/lockin.svg" alt="" /></figure>
+              <h2>Lock $RDNT liquidity2</h2>
+              <p>Contrary popular belief, Lorem Ipsum is not simply random It has roots in a piece</p>
+            </div>
+
+            <div class="card-howItWorks-container">
+              <figure><img src="src/assets/img/liquidity.svg" /></figure>
+              <h2>Lock $RDNT liquidity2</h2>
+              <p>Contrary popular belief, Lorem Ipsum is not simply random It has roots in a piece</p>
+            </div>
+
+            <div class="card-howItWorks-container">
+              <figure><img src="src/assets/img/stacks.svg" /></figure>
+              <h2>Lock $RDNT liquidity2</h2>
+              <p>Contrary popular belief, Lorem Ipsum is not simply random It has roots in a piece</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
+
+  <script src="src/js/index.js"></script>
 </html>
