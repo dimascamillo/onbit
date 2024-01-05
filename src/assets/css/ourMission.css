@@ -1,0 +1,107 @@
+#ourMission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 10rem;
+  margin-bottom: 10rem; }
+  #ourMission::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/separate.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 2px;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  #ourMission h2 {
+    font-size: 3rem;
+    margin: 2rem; }
+  #ourMission .ourMission-description {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 4rem; }
+
+#container-ourMission {
+  display: flex; }
+  #container-ourMission nav {
+    display: flex;
+    flex-direction: column; }
+    #container-ourMission nav button {
+      text-align: left;
+      font-size: 1.5rem;
+      width: 20rem;
+      height: 7.5rem;
+      padding: 0 3rem; }
+      #container-ourMission nav button.active {
+        background-image: linear-gradient(144deg, #111937, #0f2835 50%); }
+    #container-ourMission nav #btn-ourMission-one {
+      position: relative; }
+      #container-ourMission nav #btn-ourMission-one::after {
+        position: absolute;
+        content: "";
+        background-image: url("../img/separete-btn.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 2px; }
+      #container-ourMission nav #btn-ourMission-one::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/separete-btn.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        bottom: 2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        z-index: 1; }
+    #container-ourMission nav #btn-ourMission-two {
+      position: relative; }
+      #container-ourMission nav #btn-ourMission-two::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/separete-btn.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        bottom: 2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        z-index: 1; }
+    #container-ourMission nav #btn-ourMission-three {
+      position: relative; }
+      #container-ourMission nav #btn-ourMission-three::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/separete-btn.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        bottom: 2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        z-index: 1; }
+  #container-ourMission .cards-ourMission {
+    display: flex; }
+    #container-ourMission .cards-ourMission p {
+      width: 60%;
+      height: 100%;
+      padding: 5rem 3rem;
+      background-image: linear-gradient(144deg, #111937, #102235 50%); }
+
+#card-ourMission-one,
+#card-ourMission-two,
+#card-ourMission-three {
+  height: 22.5rem; }
+
+#card-ourMission-one.disabled,
+#card-ourMission-two.disabled,
+#card-ourMission-three.disabled {
+  display: none; }
