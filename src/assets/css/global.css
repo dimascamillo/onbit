@@ -459,3 +459,32 @@ a {
       padding-left: 2.5rem; }
       #footer .link-whatsapp:hover .icon-whatsapp {
         display: block; }
+
+#btn-whatsapp-fixed {
+  position: fixed;
+  bottom: 80px;
+  right: 250px;
+  animation: floatAnimation 2s infinite; }
+  #btn-whatsapp-fixed img {
+    position: relative;
+    width: 7rem;
+    z-index: 2; }
+  #btn-whatsapp-fixed span {
+    z-index: 1;
+    border-radius: 10px;
+    position: absolute;
+    left: 30px;
+    width: 25rem;
+    padding: 1rem;
+    padding-left: 6rem;
+    text-align: left;
+    background-color: rgba(21, 156, 21, 0.767);
+    font-size: 1.5rem; }
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-20px); }
+  100% {
+    transform: translateY(0); } }

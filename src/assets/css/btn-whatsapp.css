@@ -1,0 +1,10 @@
+#btn-whatsapp-fixed {
+  position: fixed;
+  bottom: 25px;
+  right: 150px; }
+  #btn-whatsapp-fixed img {
+    width: 5rem; }
+  #btn-whatsapp-fixed span {
+    position: absolute;
+    width: 10rem;
+    text-align: left; }
