@@ -71,3 +71,10 @@ document.getElementById("btn-ourMission-three").addEventListener("click", functi
     ["card-ourMission-one", "card-ourMission-two"],
   );
 });
+
+document.querySelector(".backtotop-button").addEventListener("click", function () {
+  window.scrollTo({
+    top: document.getElementById("header-navbar").offsetTop,
+    behavior: "smooth",
+  });
+});
