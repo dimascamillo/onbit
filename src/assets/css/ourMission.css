@@ -31,7 +31,8 @@
   #container-ourMission nav {
     position: relative;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-left: 20rem; }
     #container-ourMission nav::after {
       position: absolute;
       content: "";

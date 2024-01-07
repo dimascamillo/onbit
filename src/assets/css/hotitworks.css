@@ -5,3 +5,76 @@
     display: flex;
     justify-content: center;
     gap: 3rem; }
+    #howItWorks header nav ul button {
+      align-items: center;
+      background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+      border: 0;
+      border-radius: 8px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      color: #ffffff;
+      display: flex;
+      font-family: Phantomsans, sans-serif;
+      font-size: 20px;
+      justify-content: center;
+      line-height: 1em;
+      max-width: 100%;
+      min-width: 140px;
+      padding: 3px;
+      margin-top: 2rem;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer; }
+      #howItWorks header nav ul button:active, #howItWorks header nav ul button:hover {
+        outline: 0; }
+      #howItWorks header nav ul button span {
+        background-color: #05062d;
+        padding: 16px 24px;
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+        transition: 300ms; }
+      #howItWorks header nav ul button.active span {
+        background: none; }
+
+.card-howItWorks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 8rem;
+  padding-bottom: 10rem; }
+  .card-howItWorks .card-howItWorks-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%; }
+    .card-howItWorks .card-howItWorks-container:nth-child(2)::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/bars-howItWorks.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: -30px;
+      left: -100px;
+      width: 5px;
+      height: 300px; }
+    .card-howItWorks .card-howItWorks-container:nth-child(2)::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/bars-howItWorks.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: -30px;
+      right: -100px;
+      width: 5px;
+      height: 300px; }
+
+#card-howItWorks-one.disabled,
+#card-howItWorks-two.disabled {
+  display: none; }

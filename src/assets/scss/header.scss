@@ -13,6 +13,30 @@
   display: flex;
   justify-content: space-between;
 
+  &.scroll {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: $white;
+    width: 100vw;
+    max-width: unset;
+    padding-top: 0;
+    padding: 3rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+
+    a {
+      color: $background-header;
+
+      &:hover {
+        border-bottom: 1px solid $background-header;
+      }
+    }
+  }
+
   h1 {
     width: 20rem;
     img {
@@ -36,12 +60,12 @@
 
       padding: 1rem;
       border-radius: 6px;
+      border-bottom: 1px solid transparent;
 
       transition: all 0.2s ease-in-out;
 
       &:hover {
-        background-color: $logoColor;
-        color: white;
+        border-bottom: 1px solid white;
       }
     }
   }
@@ -50,7 +74,7 @@
 #container-slide {
   max-width: 120rem;
   margin: auto;
-  margin-top: 12rem;
+  margin-top: 10rem;
 
   display: flex;
   align-items: center;

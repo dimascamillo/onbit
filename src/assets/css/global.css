@@ -47,6 +47,23 @@ a {
   padding-top: 2.5rem;
   display: flex;
   justify-content: space-between; }
+  #container-header.scroll {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: #ffffff;
+    width: 100vw;
+    max-width: unset;
+    padding-top: 0;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30rem; }
+    #container-header.scroll a {
+      color: #0a3641e3; }
+      #container-header.scroll a:hover {
+        border-bottom: 1px solid #0a3641e3; }
   #container-header h1 {
     width: 20rem; }
     #container-header h1 img {
@@ -64,15 +81,15 @@ a {
       background-color: transparent;
       padding: 1rem;
       border-radius: 6px;
+      border-bottom: 1px solid transparent;
       transition: all 0.2s ease-in-out; }
       #container-header nav ul li a:hover {
-        background-color: #1589e7c0;
-        color: white; }
+        border-bottom: 1px solid white; }
 
 #container-slide {
   max-width: 120rem;
   margin: auto;
-  margin-top: 12rem;
+  margin-top: 10rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -161,13 +178,39 @@ a {
     justify-content: center;
     gap: 3rem; }
     #howItWorks header nav ul button {
-      font-size: 2rem;
-      background-color: transparent;
+      align-items: center;
+      background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+      border: 0;
+      border-radius: 8px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
       color: #ffffff;
-      padding: 1rem 2rem;
-      transition: 0.2s all ease; }
-      #howItWorks header nav ul button.active {
-        background-color: #0a3641e3; }
+      display: flex;
+      font-family: Phantomsans, sans-serif;
+      font-size: 20px;
+      justify-content: center;
+      line-height: 1em;
+      max-width: 100%;
+      min-width: 140px;
+      padding: 3px;
+      margin-top: 2rem;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer; }
+      #howItWorks header nav ul button:active, #howItWorks header nav ul button:hover {
+        outline: 0; }
+      #howItWorks header nav ul button span {
+        background-color: #05062d;
+        padding: 16px 24px;
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+        transition: 300ms; }
+      #howItWorks header nav ul button.active span {
+        background: none; }
 
 .card-howItWorks {
   display: flex;
@@ -241,7 +284,8 @@ a {
   #container-ourMission nav {
     position: relative;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-left: 20rem; }
     #container-ourMission nav::after {
       position: absolute;
       content: "";
