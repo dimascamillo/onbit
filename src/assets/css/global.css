@@ -42,10 +42,11 @@ a {
   background-size: cover; }
 
 #container-header {
-  max-width: 120rem;
+  max-width: 130rem;
   margin: auto;
   padding-top: 2.5rem;
   display: flex;
+  align-items: center;
   justify-content: space-between; }
   #container-header.scroll {
     position: fixed;
@@ -62,6 +63,8 @@ a {
     gap: 30rem; }
     #container-header.scroll a {
       color: #0a3641e3; }
+      #container-header.scroll a.transition {
+        transition: all 0.5s ease; }
       #container-header.scroll a:hover {
         border-bottom: 1px solid #0a3641e3; }
   #container-header h1 {

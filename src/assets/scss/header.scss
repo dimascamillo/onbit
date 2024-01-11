@@ -6,11 +6,12 @@
 }
 
 #container-header {
-  max-width: 120rem;
+  max-width: 130rem;
   margin: auto;
   padding-top: 2.5rem;
 
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
   &.scroll {
@@ -30,6 +31,10 @@
 
     a {
       color: $background-header;
+      
+      &.transition {
+        transition: all 0.5s ease;
+     }
 
       &:hover {
         border-bottom: 1px solid $background-header;
