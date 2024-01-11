@@ -1,5 +1,5 @@
 #header-navbar {
-  height: 50rem;
+  height: 60rem;
   background-image: url("../img/background-header.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   &.scroll {
     position: fixed;
     top: 0;
@@ -79,6 +78,10 @@
   margin: auto;
   margin-top: 10rem;
 
+  #container-header.scroll + & {
+  padding-top: 20rem;
+  }
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -88,9 +91,6 @@
 
   text-align: center;
 
-  #container-header.scroll + & {
-    padding-top: 180px;
-  }
 
   h2 {
     font-size: 4rem;

@@ -36,7 +36,7 @@ a {
   color: #ffffff; }
 
 #header-navbar {
-  height: 50rem;
+  height: 60rem;
   background-image: url("../img/background-header.png");
   background-repeat: no-repeat;
   background-size: cover; }
@@ -97,7 +97,7 @@ a {
   margin-bottom: 1.5rem;
   text-align: center; }
   #container-header.scroll + #container-slide {
-    padding-top: 180px; }
+    padding-top: 20rem; }
   #container-slide h2 {
     font-size: 4rem;
     color: #ffffff;
