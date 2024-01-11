@@ -1,9 +1,9 @@
 #price {
-  height: 50rem;
+  height: 30rem;
   background-image: url("../img/background-price.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 13rem; }
+  padding-top: 5rem; }
 
 #container-price {
   height: 20rem;
@@ -13,7 +13,14 @@
   text-align: center;
   background-image: url("../img/price.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  #container-price .price-card h2 {
+    font-size: 1rem;
+    color: white; }
+  #container-price .price-card h3 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold; }

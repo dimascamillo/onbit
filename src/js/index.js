@@ -79,14 +79,4 @@ document.querySelector(".backtotop-button").addEventListener("click", function (
   });
 });
 
-window.addEventListener("scroll", function () {
-  var containerHeader = document.getElementById("container-header");
-  let logoOnBit = document.getElementById("logo-onbit");
-  if (window.scrollY > 100) {
-    containerHeader.classList.add("scroll");
-    logoOnBit.src = "src/assets/img/logo-onbit.png";
-  } else {
-    containerHeader.classList.remove("scroll");
-    logoOnBit.src = "src/assets/img/logo-onbit-branca.png";
-  }
-});
+

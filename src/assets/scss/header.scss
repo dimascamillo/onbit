@@ -13,31 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  &.scroll {
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    background-color: $white;
-    width: 100vw;
-    max-width: unset;
-    padding: 3rem 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30rem;
-
-
-
-    a {
-      color: $background-header;
-      
-
-      &:hover {
-        border-bottom: 1px solid $background-header;
-      }
-    }
-  }
 
   h1 {
     width: 20rem;
@@ -55,7 +30,7 @@
     list-style: none;
 
     li a {
-      color: $white;
+      color: white;
       font-size: 2rem;
       text-decoration: none;
       background-color: transparent;
@@ -78,10 +53,6 @@
   margin: auto;
   margin-top: 10rem;
 
-  #container-header.scroll + & {
-  padding-top: 20rem;
-  }
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -94,14 +65,14 @@
 
   h2 {
     font-size: 4rem;
-    color: $white;
+    color: white;
 
     width: 70%;
   }
 
   p {
     font-size: 1.5rem;
-    color: $white;
+    color: white;
 
     width: 50%;
   }
