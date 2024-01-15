@@ -88,7 +88,7 @@ a {
     font-size: 1.5rem;
     color: white;
     width: 50%; }
-  #container-slide button {
+  #container-slide a {
     align-items: center;
     background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
     border: 0;
@@ -111,19 +111,19 @@ a {
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer; }
-    #container-slide button:active, #container-slide button:hover {
+    #container-slide a:active, #container-slide a:hover {
       outline: 0; }
-    #container-slide button span {
+    #container-slide a span {
       background-color: #05062d;
       padding: 16px 24px;
       border-radius: 6px;
       width: 100%;
       height: 100%;
       transition: 300ms; }
-    #container-slide button:hover span {
+    #container-slide a:hover span {
       background: none; }
     @media (min-width: 768px) {
-      #container-slide button .button-64 {
+      #container-slide a .button-64 {
         font-size: 24px;
         min-width: 196px; } }
 
